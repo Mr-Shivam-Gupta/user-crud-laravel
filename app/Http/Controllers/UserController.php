@@ -10,8 +10,9 @@ class UserController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        echo 'user controller here';
+    {   
+        $title ='User List'; 
+      return view('user.index',compact('title'));
     }
 
     /**
